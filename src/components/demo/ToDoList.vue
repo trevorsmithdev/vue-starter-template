@@ -5,6 +5,7 @@
           <button v-on:click="addTodo">Add ToDo</button>
       </div>
       <ul>
+          <h2>To Do List</h2>
           <li v-for="(item, index) in todos" v-bind:key="index">{{ item }}</li>
       </ul>
   </div>
@@ -32,14 +33,7 @@ export default {
 </script>
 
 <style>
-.input-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
 .todo-input {
     margin-right: 10px;
 }
-
-
 </style>
