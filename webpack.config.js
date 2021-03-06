@@ -6,7 +6,7 @@ module.exports = {
     entry: './src/index.js',
     mode: 'production',
     output: {
-        filename: 'main.js',
+        filename: 'main.[contenthash].js',
         path: path.resolve(__dirname, 'dist')
     },
     module: {
@@ -30,7 +30,7 @@ module.exports = {
     plugins: [
         new VueLoaderPlugin(),
         new MiniCssExtractPlugin({
-            filename: '[name].css'
+            filename: '[name].[contenthash].css'
         })
     ]
 }
