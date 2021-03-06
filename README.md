@@ -5,3 +5,4 @@ A starter SPA using Vue. This app has been bootstrapped using webpack with the f
 - Optimized development build with local dev server (live-reloading)
 - CSS extraction for serving styles separate from the main bundle
 - Base HTML templating using handlebars
+- _More Coming Soon!_ ⚙️
