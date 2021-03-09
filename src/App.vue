@@ -1,6 +1,9 @@
 <template>
-  <h1 class="hello-world">{{ message }}</h1>
-  <ToDoList />
+  <div class="app-wrapper">
+    <h1 class="hello-world">{{ message }}</h1>
+    <ToDoList class="component" />
+  </div>
+  
 </template>
 
 <script>
@@ -11,14 +14,30 @@ export default {
     },
     data () {
         return {
-            message: 'Hello World'
+            message: 'Vue Starter Template'
         }
     }
 }
 </script>
 
 <style>
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./public/fonts/Poppins-Regular.woff') format('woff');
+    font-style: normal;
+  }
+  .app-wrapper {
+    background-color: #605856;
+    color: white;
+    min-height: 100vh;
+    font-family: 'Poppins';
+  }
   .hello-world {
-      color: red;
+    text-align: center;
+    margin: 0;
+  }
+  .component {
+    border: 1px dashed white;
+    margin: 10px
   }
 </style>
