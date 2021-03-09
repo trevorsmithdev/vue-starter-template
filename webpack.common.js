@@ -30,6 +30,10 @@ module.exports = {
             {
                 test: /\.hbs$/,
                 loader: 'handlebars-loader'
+            },
+            {
+                test: /\.woff$/,
+                type: 'asset/resource'
             }
         ]
     },
