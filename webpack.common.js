@@ -28,6 +28,17 @@ module.exports = {
 
             },
             {
+                test: /\.scss$/,
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader
+                    },
+                    'css-loader',
+                    'sass-loader'
+                ]
+
+            },
+            {
                 test: /\.hbs$/,
                 loader: 'handlebars-loader'
             },

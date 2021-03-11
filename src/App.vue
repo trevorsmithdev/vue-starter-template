@@ -20,14 +20,16 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "./styles/colors.scss";
+
   @font-face {
     font-family: 'Poppins';
     src: url('./public/fonts/Poppins-Regular.woff') format('woff');
     font-style: normal;
   }
   .app-wrapper {
-    background-color: #605856;
+    background-color: $dark-grey;
     color: white;
     min-height: 100vh;
     font-family: 'Poppins';

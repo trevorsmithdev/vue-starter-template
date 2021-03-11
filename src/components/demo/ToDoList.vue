@@ -31,14 +31,23 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "../../styles/colors.scss";
+
 .todo-input {
-    margin-right: 10px;
-    font-family: 'Poppins'
+    font-family: 'Poppins';
+    margin-bottom: 10px;
 }
 .button {
     background-color: #94c9a9;
     font-family: 'Poppins', sans-serif;
+    color: $dark-grey;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0 20px;
+    display: block;
+    margin: auto;
 }
 .input-wrapper {
     padding: 10px;
