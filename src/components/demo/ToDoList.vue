@@ -46,9 +46,12 @@ export default {
     font-size: 15px;
     cursor: pointer;
     text-decoration: none;
-    padding: 0 20px;
+    padding: 0 30px;
     display: block;
     margin: auto;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
 }
 .input-wrapper {
     padding: 10px;
