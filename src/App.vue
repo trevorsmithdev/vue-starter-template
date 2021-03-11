@@ -40,6 +40,6 @@ export default {
   }
   .component {
     border: 1px dashed white;
-    margin: 10px
+    margin: auto;
   }
 </style>
