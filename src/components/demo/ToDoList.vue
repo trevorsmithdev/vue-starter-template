@@ -32,9 +32,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import "../../styles/colors.scss";
-
+<style>
 .todo-input {
     font-family: 'Poppins';
     margin-bottom: 10px;
@@ -42,7 +40,7 @@ export default {
 .button {
     background-color: #94c9a9;
     font-family: 'Poppins', sans-serif;
-    color: $dark-grey;
+    color: #201E1D;
     font-size: 15px;
     cursor: pointer;
     text-decoration: none;
