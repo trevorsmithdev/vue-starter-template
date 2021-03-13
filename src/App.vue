@@ -20,24 +20,26 @@ export default {
 }
 </script>
 
-<style>
-  @font-face {
-    font-family: 'Poppins';
-    src: url('./public/fonts/Poppins-Regular.woff') format('woff');
-    font-style: normal;
-  }
-  .app-wrapper {
-    background-color: #201E1D;
-    color: white;
-    min-height: 100vh;
-    font-family: 'Poppins';
-  }
-  .hello-world {
-    text-align: center;
-    margin: 0;
-  }
-  .component {
-    border: 1px dashed white;
-    margin: auto;
-  }
+<style lang="scss">
+@import "./styles/variables.scss";
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./public/fonts/Poppins-Regular.woff') format('woff');
+  font-style: normal;
+}
+.app-wrapper {
+  background-color: $dark-grey;
+  color: white;
+  min-height: 100vh;
+  font-family: 'Poppins';
+}
+.hello-world {
+  text-align: center;
+  margin: 0;
+}
+.component {
+  border: 1px dashed white;
+  margin: auto;
+}
 </style>

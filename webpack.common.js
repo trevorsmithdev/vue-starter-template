@@ -18,12 +18,13 @@ module.exports = {
                 use: 'vue-loader'
             },
             {
-                test: /\.css$/,
+                test: /\.s?[ac]ss$/i,
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader
                     },
-                    'css-loader'
+                    'css-loader',
+                    'postcss-loader'
                 ]
 
             },
