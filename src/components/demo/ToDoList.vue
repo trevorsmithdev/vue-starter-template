@@ -1,5 +1,5 @@
 <template>
-  <div class="p-5 max-w-screen-md">
+  <div class="p-5 max-w-screen-sm">
       <div class="text-center">
           <input v-model="todo" class="mb-4 p-1 text-black" ref="todo" />
           <div>
