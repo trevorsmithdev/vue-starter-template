@@ -29,6 +29,17 @@ module.exports = {
 
             },
             {
+                test: /\.postcss$/i,
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader
+                    },
+                    'css-loader',
+                    'postcss-loader'
+                ]
+
+            },
+            {
                 test: /\.hbs$/,
                 loader: 'handlebars-loader'
             },
