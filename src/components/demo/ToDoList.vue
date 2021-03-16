@@ -1,11 +1,15 @@
 <template>
-  <div class="todo-wrapper">
-      <div class="input-wrapper">
-          <input v-model="todo" class="todo-input" ref="todo" />
-          <button class="button" v-on:click="addTodo">Add ToDo</button>
+  <div class="p-5 max-w-screen-sm">
+      <div class="text-center">
+          <input v-model="todo" class="mb-4 p-1 text-black" ref="todo" />
+          <div>
+              <button class="btn btn-blue" v-on:click="addTodo">Add ToDo</button>
+          </div>
       </div>
       <ul>
-          <li v-for="(item, index) in todos" v-bind:key="index">{{ item }}</li>
+          <li v-for="(item, index) in todos" v-bind:key="index">
+              <input type="checkbox" class="mr-3" />{{ item }}
+          </li>
       </ul>
   </div>
 </template>
@@ -32,32 +36,16 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import "../../styles/colors.scss";
+<style lang="postcss">
+.btn {
+    @apply font-bold py-2 px-4 rounded;
+}
 
-.todo-input {
-    font-family: 'Poppins';
-    margin-bottom: 10px;
+.btn-blue {
+    @apply bg-blue-500 text-white;
 }
-.button {
-    background-color: #94c9a9;
-    font-family: 'Poppins', sans-serif;
-    color: $dark-grey;
-    font-size: 15px;
-    cursor: pointer;
-    text-decoration: none;
-    padding: 0 30px;
-    display: block;
-    margin: auto;
-    font-weight: 600;
-    border-radius: 10px;
-    border: none;
-}
-.input-wrapper {
-    padding: 10px;
-    text-align: center;  
-}
-.todo-wrapper {
-    max-width: 450px;
+
+.btn-blue:hover {
+    @apply bg-blue-700;
 }
 </style>

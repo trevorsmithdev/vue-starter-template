@@ -1,7 +1,7 @@
 <template>
   <div class="app-wrapper">
-    <h1 class="hello-world">{{ message }}</h1>
-    <ToDoList class="component" />
+    <h1 class="m-0 text-center">{{ message }}</h1>
+    <ToDoList class="border border-dashed m-auto" />
   </div>
   
 </template>
@@ -20,26 +20,18 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import "./styles/colors.scss";
+<style lang="postcss">
+@import "./styles/variables.scss";
 
-  @font-face {
-    font-family: 'Poppins';
-    src: url('./public/fonts/Poppins-Regular.woff') format('woff');
-    font-style: normal;
-  }
-  .app-wrapper {
-    background-color: $dark-grey;
-    color: white;
-    min-height: 100vh;
-    font-family: 'Poppins';
-  }
-  .hello-world {
-    text-align: center;
-    margin: 0;
-  }
-  .component {
-    border: 1px dashed white;
-    margin: auto;
-  }
+@font-face {
+  font-family: 'Poppins';
+  src: url('./public/fonts/Poppins-Regular.woff') format('woff');
+  font-style: normal;
+}
+.app-wrapper {
+  background-color: $dark-grey;
+  color: white;
+  min-height: 100vh;
+  font-family: 'Poppins';
+}
 </style>

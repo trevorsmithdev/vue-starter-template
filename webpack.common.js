@@ -18,23 +18,24 @@ module.exports = {
                 use: 'vue-loader'
             },
             {
-                test: /\.css$/,
-                use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader
-                    },
-                    'css-loader'
-                ]
-
-            },
-            {
-                test: /\.scss$/,
+                test: /\.s?[ac]ss$/i,
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader
                     },
                     'css-loader',
-                    'sass-loader'
+                    'postcss-loader'
+                ]
+
+            },
+            {
+                test: /\.postcss$/i,
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader
+                    },
+                    'css-loader',
+                    'postcss-loader'
                 ]
 
             },
