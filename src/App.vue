@@ -1,7 +1,7 @@
 <template>
   <div class="app-wrapper">
-    <h1 class="hello-world">{{ message }}</h1>
-    <ToDoList class="component" />
+    <h1 class="m-0 text-center">{{ message }}</h1>
+    <ToDoList class="border border-dashed m-auto" />
   </div>
   
 </template>
@@ -20,7 +20,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="postcss">
 @import "./styles/variables.scss";
 
 @font-face {
@@ -33,13 +33,5 @@ export default {
   color: white;
   min-height: 100vh;
   font-family: 'Poppins';
-}
-.hello-world {
-  text-align: center;
-  margin: 0;
-}
-.component {
-  border: 1px dashed white;
-  margin: auto;
 }
 </style>
