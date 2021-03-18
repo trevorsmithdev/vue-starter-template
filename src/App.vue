@@ -1,16 +1,21 @@
 <template>
   <div class="app-wrapper">
-    <h1 class="m-0 text-center">{{ message }}</h1>
-    <ToDoList class="border border-dashed m-auto" />
+    <StickyHeader class="component" />
+    <!-- <ToDoList class="border border-dashed m-auto" /> -->
+    <BaconIpsum class="p-10" />
   </div>
   
 </template>
 
 <script>
 import ToDoList from './components/demo/ToDoList.vue'
+import StickyHeader from './components/StickyHeader.vue'
+import BaconIpsum from './components/BaconIpsum.vue'
 export default {
     components: {
-      ToDoList
+      ToDoList,
+      StickyHeader,
+      BaconIpsum
     },
     data () {
         return {
@@ -33,5 +38,8 @@ export default {
   color: white;
   min-height: 100vh;
   font-family: 'Poppins';
+}
+.component {
+  @apply border border-dashed;
 }
 </style>
